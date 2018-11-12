@@ -1,0 +1,167 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@shopify/shopify-express",
+        "scope": "@shopify",
+        "escapedName": "@shopify%2fshopify-express",
+        "name": "@shopify/shopify-express",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/ichenwu/code/next-shopify"
+    ]
+  ],
+  "_from": "@shopify/shopify-express@latest",
+  "_hasShrinkwrap": false,
+  "_id": "@shopify/shopify-express@1.0.0-alpha.7",
+  "_inCache": true,
+  "_location": "/@shopify/shopify-express",
+  "_nodeVersion": "8.9.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/shopify-express_1.0.0-alpha.7_1520373489291_0.5744951190124878"
+  },
+  "_npmUser": {
+    "name": "shopify-dep",
+    "email": "npmjs+shopify-dep@shopify.com"
+  },
+  "_npmVersion": "5.7.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@shopify/shopify-express",
+    "scope": "@shopify",
+    "escapedName": "@shopify%2fshopify-express",
+    "name": "@shopify/shopify-express",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@shopify/shopify-express/-/shopify-express-1.0.0-alpha.7.tgz",
+  "_shasum": "3cda42038cec51ae2be4543cabb952520c3bf0eb",
+  "_shrinkwrap": null,
+  "_spec": "@shopify/shopify-express",
+  "_where": "/Users/ichenwu/code/next-shopify",
+  "author": {
+    "name": "Shopify Inc."
+  },
+  "bugs": {
+    "url": "https://github.com/Shopify/shopify-express/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-redis": "^3.3.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.3",
+    "knex": "^0.13.0",
+    "node-fetch": "^1.7.3",
+    "prop-types": "^15.6.1",
+    "raw-body": "^2.3.2",
+    "redis": "^2.7.1",
+    "sqlite3": "^3.1.9",
+    "url": "^0.11.0"
+  },
+  "description": "Get up and running quickly with Express.js and the Shopify API.",
+  "devDependencies": {
+    "find-free-port": "^1.1.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^5.0.0",
+    "prettier": "^1.8.2",
+    "prettier-check": "^2.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-dCioTTnHGBj4M1KQlfj6q8M//Ctwgq6qP+96Xpwt2ub+uNWUmMuFytJ49yh+Mbdn1swvGxCvfz2W4BDQkHJVGw==",
+    "shasum": "3cda42038cec51ae2be4543cabb952520c3bf0eb",
+    "tarball": "http://registry.npmjs.org/@shopify/shopify-express/-/shopify-express-1.0.0-alpha.7.tgz",
+    "fileCount": 27,
+    "unpackedSize": 148628
+  },
+  "engines": {
+    "node": ">=8.1.0"
+  },
+  "gitHead": "6116acec85f5e006cd362bb3dd10d0969e6dcfa0",
+  "homepage": "https://github.com/Shopify/shopify-express#readme",
+  "keywords": [
+    "shopify",
+    "express.js",
+    "express middleware"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js}": [
+      "prettier:check"
+    ]
+  },
+  "maintainers": [
+    {
+      "name": "goodforonefare",
+      "email": "goodforonefare@gmail.com"
+    },
+    {
+      "name": "huguestennier",
+      "email": "hugues.tennier@shopify.com"
+    },
+    {
+      "name": "ismail.syed",
+      "email": "ismail.syed@shopify.com"
+    },
+    {
+      "name": "lemonmade",
+      "email": "chrismsauve@gmail.com"
+    },
+    {
+      "name": "nathanpjf",
+      "email": "shout@nathanpjf.com"
+    },
+    {
+      "name": "shopify-dep",
+      "email": "npmjs+shopify-dep@shopify.com"
+    },
+    {
+      "name": "thomaskelly",
+      "email": "thomas.kelly@shopify.com"
+    },
+    {
+      "name": "tsov",
+      "email": "tsov@me.com"
+    }
+  ],
+  "name": "@shopify/shopify-express",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shopify/shopify-express.git"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "prettier:check": "prettier-check --single-quote --trailing-comma=all {middleware,routes,shopStore}{/*,/**/*}.{js}",
+    "prettier:fix": "prettier --single-quote --trailing-comma=all --write {middleware,routes,shopStore}{/*,/**/*}.{js}",
+    "test": "jest",
+    "test:ci": "jest --ci"
+  },
+  "version": "1.0.0-alpha.7",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">=8.1.0"
+      },
+      "pkgid": "@shopify/shopify-express@1.0.0-alpha.7"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">=8.1.0"
+      },
+      "pkgid": "@shopify/shopify-express@1.0.0-alpha.7"
+    }
+  ]
+}
