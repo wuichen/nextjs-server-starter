@@ -10,19 +10,20 @@ const {withShop} = require('./api/middlewares/shopify.middleware')
 // nextjs
 app.prepare().then(() => {
 
-	// validate shopify session
-	// server.use(
- //    withShop({authBaseUrl: '/v1/shopify'}).unless({
- //      path: [
- //        '/toshopify',
- //        '/shopify'
- //      ],
- //    })
-	// );
+// validate shopify session
+// server.use(
+//    withShop({authBaseUrl: '/v1/shopify'}).unless({
+//      path: [
+//        '/toshopify',
+//        '/shopify'
+//      ],
+//    })
+// );
 
-  // server.get('/', withShop({authBaseUrl: '/shopify'}), async (request, response) => {
-  //   return app.render(request, response, '/', {})
-  // });
+  server.get(['/','/account'], withShop({authBaseUrl: '/shopify'}), async (request, response) => {
+    const { session: { shop, accessToken } } = request;
+    return app.render(request, response, '/', {shop, accessToken, shopify_apiKey: constants.shopify_apiKey})
+  });
   const handler = clientRoutes.getRequestHandler(app)
   // const handler = clientRoutes.getRequestHandler(app, ({req, res, route, query}) => {
   //   app.render(req, res, route.page, query)

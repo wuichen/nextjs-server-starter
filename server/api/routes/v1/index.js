@@ -9,4 +9,17 @@ const router = express.Router();
 
 router.use('/shopify', shopifyRoutes);
 
+router.get('/v1/api/shop', (req, res) => {
+	const { session: { shop, accessToken } } = req;
+	// console.log(shop)
+	if (shop ) {
+		res.json({
+			shop, accessToken
+		})
+	} else {
+		res.send('failed')
+	}
+	
+})
+
 module.exports = router;

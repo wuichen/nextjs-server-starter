@@ -40,6 +40,8 @@ export default class extends Document {
   render () {
     return (<html {...this.helmetHtmlAttrComponents}>
       <Head>
+        <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/3.0.0/polaris.min.css" />
+
         { this.helmetJsx }
         { this.helmetHeadComponents }
       </Head>
